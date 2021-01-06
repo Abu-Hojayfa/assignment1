@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    background-color: cornsilk;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    color: rgb(50, 44, 94);
+}
+
+span{  
+    color: #ad4b53;
+}
+
+p{
+    font-size: 18px;
+    font-family:cursive;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+/* nav dsign start */
+.sidenav{
+    background-image: url("img/top-banner.png");
+    background-repeat: no-repeat;
+    padding-left: 60%;
+    padding-top: 65px;
+}
+
+.sidenav a{
+    text-decoration: none;
+    margin-left: 45px;
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 5px 8px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: rgb(49, 38, 131);
+}
+
+.sidenav a:nth-child(1){
+    background-color: #ece3bf;
+    color: rgb(29, 55, 202);
+}
+/* nav design end */
+
+/* hover part of nav */
+.sidenav a:nth-child(2):hover,
+.sidenav a:nth-child(3):hover,
+.sidenav a:nth-child(4):hover
+{
+    background-color: #ece3bf;
+    color: rgb(29, 55, 202);
+    transition: .3s;
+}
+
+/* korta hobe,,, keno hosse na */
+
+/* intro area */
+.first{
+    width: 85%;
+    height: 740px;
+    margin-left: 10%;
+    margin-top: 7%;
+    
+}
+
+.intro{
+    width: 35%;
+    float: left;
+    padding-top: 10%;
+}
+
+.intro a{
+    text-decoration: none;
+    color: ghostwhite;
+    font-family: sans-serif;
+    font-size: 22px;
+    text-align: justify;
+    padding: 15px 50px;
+    border-radius: 10px;
+    background: linear-gradient(to right top,#d4d0bc, #C8D5BC, #96B2A2,#6A8F8B, #476B73, #2F4858);
+}
+
+.introimg img{
+    height: 700px;
+    float: left;
+    margin-left: 15%;
+}
+
+/* cv area */
+
+.second{
+    width: 88%;
+    height: 740px;
+    margin-top: 1%;
+}
+
+.cvimg img{
+    height: 600px;
+    margin-left: 10%;
+    float: left;
+}
+
+.about{ 
+    float: left;
+    width: 35%;
+    margin: 9% 0 0 10%;
+
+}
+
+.about h2{
+    font-size: 50px;
+}
+
+.about a{
+    text-decoration: none;
+    color: ghostwhite;
+    font-family: sans-serif;
+    font-size: 22px;
+    text-align: justify;
+    padding: 15px 50px;
+    border-radius: 10px;
+    background: linear-gradient(to right top,#d4d0bc, #C8D5BC, #96B2A2,#6A8F8B, #476B73, #2F4858);
+}
+
+/* projects area */
+.projects{
+    height: 740px;
+    background-color: #e0efe3;
+    clip-path: polygon(50% 0%, 98% 0, 98% 35%, 98% 70%, 80% 90%, 50% 100%, 20% 90%, 2% 70%, 2% 35%, 2% 0);
+}
+
+.project::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.heading h2{
+    font-size: 40px;
+    text-align: center;
+}
+hr{
+    background: linear-gradient(95deg,#DDECE0,#B9D0C3, #94B6A9,#709B91, #4A827B, #1D6868);
+    height: 5px;
+    width: 200px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.project1, .project2, .project3
+{
+    height: 480px;
+    width: 25%;
+    margin-left: 6%;
+    margin-top: 3%;
+    background-color: rgba(196, 188, 163, 0);
+    float: left;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: 10px 10px  40px rgb(71, 71, 77);
+}
+
+.project1 img, .project2 img, .project3 img
+{
+    width: 450px;
+    height: 280px;
+    margin: 10px  11px;
+    border-radius: 10px;   
+}
+
+.project1 h2, .project2 h2, .project3 h2
+{
+    font-size: 35px;
+    background-color: transparent;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.project1 p, .project2 p, .project3 p{
+    background-color: transparent;
+    font-size: 22px;
+    text-align: justify;
+    padding: 8px 8px; 
+}
+
+
+
+/* extra */
+
+/* body{
+    position: absolute;
+} */
+
+/* .massage{
+    height: 796px;
+    width: 1400px;
+    margin: auto;
+    margin-bottom: 80px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    background-image: url("img/msg.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    position: absolute;
+}
+
+from{
+    position: relative;
+    background: transparent;
+    display: block;
+} */
+
+/* .massage::after{
+    clear: both;
+    content: "";
+    display: block;
+} */
+
+/* .contact h2{
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.contact hr
+{
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(#B2CAE2, #A3B1D1, #9A98BD, #947EA5)
+} */
+
+
+.inquary{
+    /* margin-top: 30%;
+    margin-bottom: 30%; */
+    width: 90%;
+    height: 300px;
+    background-image: url("img/Group_33094_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inquary h1{
+    padding: 20px;
+
+}
+
+
+
+
+
+
+
+
