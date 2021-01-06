@@ -1,5 +1,8 @@
 *{
     margin: 0;
+}
+
+body{
     background-color: cornsilk;
 }
 
@@ -45,17 +48,6 @@ p{
 }
 /* nav design end */
 
-/* hover part of nav */
-.sidenav a:nth-child(2):hover,
-.sidenav a:nth-child(3):hover,
-.sidenav a:nth-child(4):hover
-{
-    background-color: #ece3bf;
-    color: rgb(29, 55, 202);
-    transition: .3s;
-}
-
-/* korta hobe,,, keno hosse na */
 
 /* intro area */
 .first{
@@ -80,7 +72,7 @@ p{
     text-align: justify;
     padding: 15px 50px;
     border-radius: 10px;
-    background: linear-gradient(to right top,#d4d0bc, #C8D5BC, #96B2A2,#6A8F8B, #476B73, #2F4858);
+    background: linear-gradient(to right top, #F59A60, #E47A7C,#BA6A8F,#81628F);
 }
 
 .introimg img{
@@ -122,7 +114,7 @@ p{
     text-align: justify;
     padding: 15px 50px;
     border-radius: 10px;
-    background: linear-gradient(to right top,#d4d0bc, #C8D5BC, #96B2A2,#6A8F8B, #476B73, #2F4858);
+    background: linear-gradient(to right top, #F59A60, #E47A7C,#BA6A8F,#81628F);
 }
 
 /* projects area */
@@ -192,37 +184,44 @@ hr{
 
 /* extra */
 
-/* body{
+body{
+    position: relative;
+}
+.bgimg1{
+    background-image: url("img/dream-bg.png");
+    background-repeat: no-repeat;
     position: absolute;
-} */
+    right: 0;
+    top: 2600px;
+    left: 1786px;
+    bottom: 0;
+}
 
-/* .massage{
+.bgimg2{
+    background-image: url("img/exp-bg.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 3000px;
+    left: 0;
+    bottom: 0;
+}
+
+.massage{
     height: 796px;
     width: 1400px;
-    margin: auto;
-    margin-bottom: 80px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     background-image: url("img/msg.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    position: absolute;
+    margin:auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
-from{
-    position: relative;
-    background: transparent;
-    display: block;
-} */
 
-/* .massage::after{
-    clear: both;
-    content: "";
-    display: block;
-} */
-
-/* .contact h2{
-    margin-top: 50px;
+.contact h2{
+    padding-top: 40px;
     font-size: 50px;
     text-align: center;
 }
@@ -231,27 +230,153 @@ from{
 {
     width: 150px;
     height: 2px;
-    background: linear-gradient(#B2CAE2, #A3B1D1, #9A98BD, #947EA5)
-} */
+    background: linear-gradient(120deg, #051937, #002841, #003338, #003c21, #2f4106);
+}
 
+.contact p{
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-.inquary{
-    /* margin-top: 30%;
-    margin-bottom: 30%; */
-    width: 90%;
-    height: 300px;
+form input,textarea{
+    background-color: #ABC7E0;
+}
+
+.nam-mail{
+    width: 50%;
+    margin: auto;
+}
+
+form{
+    margin-top: 3%;
+}
+
+form input ,textarea{
+    color: white;
+    border: 1px solid transparent;
+}
+
+.text-area{
+    text-align: center;
+}
+
+textarea{
+    width: 44%;
+    margin-top: 30px ;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input[type="text"]{
+    width: 40%;
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-left: 35px;
+}
+
+input[type="email"]{
+    width: 40%;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+input[type="button"]{
+    background-color: #478ea5 ;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 15px 40px;
+    border: 2px solid transparent;
+}
+
+.submit{
+    width: 12%;
+    margin: auto;
+}
+
+input[type="text"]:hover{
+    border-bottom: 1px solid rgb(227, 247, 252);
+    transition: .5s;
+}
+
+input[type="email"]:hover{
+    border-bottom: 1px solid rgb(227, 247, 252);
+    transition: .5s;
+}
+
+textarea:hover{
+    border-bottom: 1px solid rgb(227, 247, 252);
+    border-right: 1px solid rgb(227, 247, 252);
+    transition: .5s;
+}
+
+input[type="button"]:hover{
+    border-bottom: 2px solid rgb(227, 247, 252);
+    border-right: 2px solid rgb(227, 247, 252);
+    transition: .2s;
+}
+
+/* massage area END */
+
+/* inquary */
+
+.box{
+    height: 350px;
+}
+
+.inqu{
     background-image: url("img/Group_33094_1.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 300px;
+    width: 1210px;
+    margin: auto;
 }
 
-.inquary h1{
-    padding: 20px;
+.inqu h2{
+    font-size: 60px;
+    color: antiquewhite;
+    padding-top: 10%;
+    padding-left: 4%;
+    float: left;
+}
 
+.inqu a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 10% ;
+    margin-left: 30%;
+    padding: 12px 20px;
+    border-radius: 10px;
+    float: left;
+    color: mintcream;
+    background: linear-gradient(120deg, #F05070, #DA4789, #B8499E);
+}
+
+/* footer */
+
+.foot{
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 20% 10%);
+    background-color: #344b8e;
+    overflow: hidden;
+}
+
+.fsl{
+    float: left;
+    padding: 0 60px;
 }
 
 
+.fsl a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: cursive;
+}
 
+.fsl:nth-child(1){
+    margin-left: 10%;
+}
 
 
 
